@@ -1,0 +1,351 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  font-family: sans-serif;
+}
+/* HEADER */
+header {
+  background-image: url("C:/Users/Mr. Idrissi/Desktop/Site/images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+header .overlay {
+  background-color: rgba(0, 0, 0, 0.248);
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+header .content-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+header .content-header .logo {
+  padding-top: 10px;
+}
+header .content-header nav ul {
+  list-style: none;
+}
+header .content-header nav ul li {
+  display: inline-block;
+  margin: 10px;
+}
+header .content-header nav ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  font-size: 20px;
+}
+header .description-header {
+  text-align: center;
+  width: 700px;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+header .description-header h2 {
+  text-transform: capitalize;
+  color: white;
+  font-size: 35px;
+}
+header .description-header p {
+  line-height: 1.5rem;
+  margin: 15px 0;
+  font-size: 20px;
+  color: white;
+}
+header .description-header button {
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-transform: capitalize;
+  font-size: 17px;
+}
+header .description-header button.first {
+  background: transparent;
+  border: 3px solid white;
+  margin-right: 15px;
+  animation: change 2s infinite;
+}
+header .description-header button.last {
+  color: black;
+  background-color: rgb(103, 202, 248);
+  border: none;
+  padding: 10px;
+}
+header .icons {
+  height: 15px;
+  width: 4px;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 25%;
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .icons span {
+  text-align: center;
+  background-color: white;
+  width: 3px;
+  height: 4px;
+  display: block;
+  margin: auto;
+  opacity: 0.5;
+  animation: slide 2s ease-in-out infinite;
+  position: relative;
+  top: 0;
+}
+/* END HEADER */
+/* START SECTION */
+section {
+  background-image: url("C:/Users/Mr. Idrissi/Desktop/Site/images/be-the-first-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-attachment: fixed;
+}
+section .over {
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  color: white;
+  width: 600px;
+  top: 50%;
+  left: 50%;
+  transition: translate(-50%, -50%);
+}
+section .over h1 {
+  text-transform: capitalize;
+  font-size: 40px;
+}
+section .over img {
+  width: 100%;
+  height: 500px;
+}
+
+section .content-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+section .content-section .feature span {
+  width: 100%;
+  height: 3px;
+  background-color: yellow;
+  display: block;
+}
+section .content-section .feature:nth-child(2) span {
+  background-color: green;
+}
+section .content-section .feature:last-child span {
+  background-color: red;
+}
+section .content-section .feature h5 {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+section .content-section .feature p {
+  line-height: 1.5rem;
+  margin: 10px 0;
+  padding: 5px;
+}
+/* END SECTION */
+/* STRAT ARTICLE */
+article {
+  background-color: rgb(73, 180, 251);
+  height: 100vh;
+  width: 100%;
+}
+article .pricing {
+  text-align: center;
+  color: white;
+  padding: 0;
+}
+article .pricing h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+  padding-top: 20px;
+  margin: 0;
+}
+}
+article .pricing p {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+article .content-art {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
+}
+article .content-art .Second-desc {
+  transform: scale(1.1);
+}
+article .content-art .prix .infos {
+  background-color: black;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+article .content-art .prix .infos h2 {
+  text-transform: capitalize;
+  color: white;
+  padding: 10px;
+}
+article .content-art .prix .infos p {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+article .content-art .prix .infos span {
+  font-weight: normal;
+  color: grey;
+}
+article .content-art .personal {
+  text-align: center;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+article .content-art .personal p {
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+}
+article .content-art .personal ul {
+  list-style: none;
+  color: black;
+  padding: 0;
+}
+article .content-art .personal ul li {
+  font-weight: bolder;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+/* END ARTICLE */
+/* STRAT MAIN */
+  main{
+    height: 80vh;
+    width: 100%;
+    background-color: floralwhite;
+  }
+  main .content-main{
+    text-align: center;
+    padding-top: 80px;
+  }
+  main .content-main p:first-child{
+    font-size: 35px;
+    text-transform: uppercase;
+  }
+  main .content-main h5{
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  main .content-main p{
+    margin: 30px 0;
+  }
+  main .content-main input{
+    display: block;
+    margin: auto;
+    width: 200px;
+    padding: 8px;
+    border: none;
+    margin-bottom: 10px;
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.248) 1px 1px 2px;
+  }
+  main .content-main button{
+    width: 150px;
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+    text-transform: capitalize;
+    box-shadow: rgba(0, 0, 0, 0.248) 1px 2px 3px;
+  }
+
+/* END MAIN */
+/* START ASIDE */
+aside{
+  height: 50vh;
+}
+aside .cont-aside{
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 20px;
+}
+aside .cont-aside .desc-ft-ad{
+  display: flex;
+  margin-top: 50px;
+}
+aside .cont-aside .desc-ft-ad p{
+
+}
+/* END ASIDE */
+/* START FOOTER */
+footer{
+  width: 100%;
+  background-color: #f3ecec;
+}
+footer .foot-desc{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+footer .foot-desc .copy p:last-child{
+  text-align: right;
+}
+
+/* END FOOTER */
+/* Keyframe */
+@keyframes change {
+  0% {
+    background-color: rgb(103, 202, 248);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.493);
+  }
+  100% {
+    background-color: rgb(103, 202, 248);
+  }
+}
+@keyframes slide {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  25% {
+    top: 4px;
+    opacity: 0.4;
+  }
+  50% {
+    top: 8px;
+    opacity: 0.6;
+  }
+  75% {
+    top: 10px;
+    opacity: 0.8;
+  }
+  100% {
+    top: 15px;
+    opacity: 1;
+  }
+}
